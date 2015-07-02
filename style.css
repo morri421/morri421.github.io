@@ -1,0 +1,129 @@
+/* CSS for Home Page */
+
+/* Resets default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Sets font for home and creates gradient background */
+body {
+  font-family: 'Nunito', sans-serif, helvetica;
+  background: #668d36;
+  background: linear-gradient(top, rgba(102,141,54,1), rgba(102,141,54,.3));
+  background: -webkit-linear-gradient(top, rgba(102,141,54,1), rgba(102,141,54,.3));
+  background: -moz-linear-gradient(top, rgba(102,141,54,1), rgba(102,141,54,.3));
+}
+
+/* Sets image and spacing for general header section */
+header {
+  position: relative;
+  background: url("img/flower.jpg");
+  background-size: cover;
+}
+
+/* No bullets for unordered links */
+ul {
+  list-style-type: none;
+}
+
+/* Sets background and spacing of Morrison Farms heading */
+h1 {
+  font-weight: bold;
+  background: #bdd09f;
+  padding: 0px 0px 0px 15px;
+}
+
+/* Sets background and spacing of nav section */
+header ul {
+  background: #bdd09f;
+  margin: 300px 0px 15px 0px;
+}
+
+/* Sets links side-by-side */
+header li {
+  display: inline;
+  padding: 4px 0px 4px 15px;
+}
+
+/* Gets rid of underline on nav links */
+header a {
+  text-decoration: none;
+}
+
+/*link color does not change */
+a:visited {
+  color:black;
+}
+
+/* Divides the content of home in three white sections */
+.content {
+  float:left;
+  height:250px;
+  border: #668d36 solid 2px;
+  margin: 0px 10px 10px 10px;
+  background: white;
+}
+
+/*Sets the spacing and details h3 on home */
+.content h3 {
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Formats the list spacing of the body content on home page */
+.content li {
+  padding: 10px 0px 10px 15px;
+}
+
+/* The three below ID's space out the three sections on the home */
+#leftcon {
+  margin: 0px 10px 10px 14px;
+  width:26%;
+}
+
+#centercon {
+  width: 42%;
+}
+
+#rightcon {
+  width: 26%;
+}
+
+/* Sets the padding around the paragraphs on home */
+#centercon p {
+  padding: 20px 20px 40px 20px;
+}
+
+/* Making home page mobile friendly */
+@media (max-width: 500px) {
+
+  body {
+    height: 1200px;
+  }
+  .content {
+    position: absolute;
+    left: 28px;
+  }
+  #leftcon {
+    bottom: -550px;
+    height: 200px;
+    width: 275px;
+    margin: 0 0;
+  }
+  #centercon {
+    height: 350px;
+    width: 275px;
+    margin: 0 0;
+  }
+  #centercon p {
+    padding: 10px 5px 10px 5px;
+  }
+  #rightcon {
+    height: 200px;
+    width: 275px;
+    bottom: -765px;
+    margin: 0 0;
+  }
+}

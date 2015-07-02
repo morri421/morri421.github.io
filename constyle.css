@@ -1,0 +1,113 @@
+
+/* Resets padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Sets font and background color and adds linear gradient */
+/*Couldn't get original gray to work, so I found a gradient online */
+/*The way I found is a lot better than the way Dash Assembly shows you */
+body {
+  font-family: 'Nunito', sans-serif, helvetica;
+  background: #cccccc;
+  background: -webkit-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* W3C */
+}
+/* Sets h1 details */
+h1 {
+  padding: 0px 0px 0px 15px;
+  background: #003366;
+  color: white;
+}
+/* Background to navigation */
+ul {
+  background: #bdd09f;
+}
+/* Sets links side-by-side */
+li {
+  display: inline;
+  padding: 4px 0px 4px 15px;
+}
+/*Gets rid of underlines*/
+a {
+  text-decoration: none;
+}
+
+/* link color does not change */
+a:visited {
+  color: black;
+}
+
+/* Positioning and sizing of image */
+img {
+  position:relative;
+  float: right;
+  height: 50%;
+  width: 50%;
+  margin: 35px 25px 25px 25px;
+  border: white solid 2px;
+  border-radius: 15px;
+}
+
+/* Positioning and sizing of form */
+#fo {
+  position: relative;
+  left: 175px;
+  top: 35px;
+  border: white solid 2px;
+  text-align: center;
+  height: 280px;
+  width: 260px;
+  padding: 20px 0px 0px 0px;
+  border-radius: 15px;
+}
+
+/*Positioning and sizing of address */
+#add {
+  border: white solid 2px;
+  border-radius: 15px;
+  margin: 0px 0px 0px 10px;
+  position: relative;
+  top: 80px;
+  left: 10px;
+  width: 550px;
+  padding: 5px 5px;
+}
+
+/* Sizing and postioning of address headers */
+#add h3 {
+  padding: 3px 0px 0px 0px;
+  text-align: center;
+}
+
+/* Padding on paragraphs in address */
+#add p {
+  padding: 0px 5px;
+}
+
+/* Mobile friendly */
+@media (max-width: 500px) {
+  img {
+    float: left;
+    height:80%;
+    width: 80%;
+    margin: 15px 15px 0px 25px;
+  }
+  #fo {
+    float: left;
+    left: 30px;
+    top: 25px;
+    padding: 15px 0px 0px 0px;
+  }
+  #add {
+    margin: 0px 0px 0px 10px;
+    float: left;
+    top: 60px;
+    left: 10px;
+    width: 275px;
+    padding: 5px 5px;
+  }
+}
