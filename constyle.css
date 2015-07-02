@@ -34,6 +34,7 @@ li {
 /*Gets rid of underlines*/
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* link color does not change */

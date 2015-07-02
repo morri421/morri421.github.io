@@ -56,6 +56,10 @@ a:visited {
   color:black;
 }
 
+a {
+  color: black;
+}
+
 /* Divides the content of home in three white sections */
 .content {
   float:left;
